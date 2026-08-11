@@ -18,32 +18,30 @@
            🎨 1. BACKGROUND & MAIN CANVAS STYLING
            ==================================================== */
         
-        /* Outer page background */
         body {
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    color: #2b1810;
-    /* 👈 CHANGE YOUR MAIN WEBSITE BACKGROUND IMAGE HERE */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url('6399f06ba129a6ba47b2521147495014.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    overflow-x: hidden;
-}
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            color: #2b1810;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url('6399f06ba129a6ba47b2521147495014.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            overflow-x: hidden;
+            position: relative;
+            min-height: 100vh;
+        }
 
         .font-hindi { font-family: 'Rozha One', serif; }
         .font-title { font-family: 'Yatra One', cursive; }
         .font-pen { font-family: 'Caveat', cursive; }
 
-        /* The Main Scrapbook Spread Container */
         .scrapbook-canvas {
-    /* 👈 CHANGE YOUR INNER SCRAPBOOK BACKGROUND IMAGE HERE */
-    background-image: url('download (1).jfif');
-    background-size: cover;
-    background-position: center;
-    border: 1px solid #d4a373;
-    box-shadow: 0 25px 60px rgba(0,0,0,0);
-}
+            background-image: url('download (1).jfif');
+            background-size: cover;
+            background-position: center;
+            border: 1px solid #d4a373;
+            box-shadow: 0 25px 60px rgba(0,0,0,0);
+        }
 
         /* Decorative Elements */
         .torn-edge-top {
@@ -58,10 +56,10 @@
         }
 
         .pattern-bg {
-    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('player-bg.jpg'); /* 👈 YOUR IMAGE HERE */
-    background-size: cover;
-    background-position: center;
-}
+            background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('player-bg.jpg');
+            background-size: cover;
+            background-position: center;
+        }
 
         .film-strip {
             background: #111;
@@ -91,52 +89,46 @@
         @keyframes spin { 100% { transform: rotate(360deg); } }
     </style>
 </head>
-<body class="min-h-screen py-8 px-3 sm:px-6 relative">
-<!-- 📸 SCROLLING SIDE PHOTOS (3 Left, 2 Right) -->
+<body class="py-8 px-3 sm:px-6">
 
-<!-- Left Side Photos Column (3 Photos) -->
-<div class="absolute left-2 sm:left-6 top-20 flex flex-col gap-12 z-10 hidden md:flex">
-    <!-- Left Photo 1 -->
-    <div class="w-32 sm:w-40 p-2 bg-amber-50 border border-amber-200/80 rounded shadow-2xl transform -rotate-6 hover:scale-105 transition-all">
-        <div class="washi-tape-gold w-16 h-4 absolute -top-2 left-1/2 -translate-x-1/2"></div>
-        <img src="764558418_731796843362275_232900130083784362_n.jpg" alt="Memory" class="w-full h-28 sm:h-36 object-cover rounded">
-        <p class="font-pen text-lg text-center text-slate-800 pt-1">Memories ✨</p>
+    <!-- 📸 SCROLLING SIDE PHOTOS -->
+    <!-- Left Side Photos Column (3 Photos) -->
+    <div class="absolute left-2 sm:left-6 top-[300px] flex flex-col gap-12 z-20 hidden md:flex">
+        <div class="w-32 sm:w-40 p-2 bg-amber-50 border border-amber-200/80 rounded shadow-2xl transform -rotate-6 hover:scale-105 transition-all">
+            <div class="washi-tape-gold w-16 h-4 absolute -top-2 left-1/2 -translate-x-1/2"></div>
+            <img src="764558418_731796843362275_232900130083784362_n.jpg" alt="Memory" class="w-full h-28 sm:h-36 object-cover rounded">
+            <p class="font-pen text-lg text-center text-slate-800 pt-1">Memories ✨</p>
+        </div>
+
+        <div class="w-32 sm:w-40 p-2 bg-amber-50 border border-amber-200/80 rounded shadow-2xl transform rotate-3 hover:scale-105 transition-all">
+            <div class="washi-tape w-16 h-4 absolute -top-2 left-1/2 -translate-x-1/2"></div>
+            <img src="721463660_1544780957302352_720720975251492386_n.jpg" alt="Memory" class="w-full h-28 sm:h-36 object-cover rounded">
+            <p class="font-pen text-lg text-center text-slate-800 pt-1">Us 💖</p>
+        </div>
+
+        <div class="w-32 sm:w-40 p-2 bg-amber-50 border border-amber-200/80 rounded shadow-2xl transform -rotate-4 hover:scale-105 transition-all">
+            <div class="washi-tape-gold w-16 h-4 absolute -top-2 left-1/2 -translate-x-1/2"></div>
+            <img src="762660135_1745792713401246_4945141169713789483_n.jpg" alt="Memory" class="w-full h-28 sm:h-36 object-cover rounded">
+            <p class="font-pen text-lg text-center text-slate-800 pt-1">My World 🌎</p>
+        </div>
     </div>
 
-    <!-- Left Photo 2 -->
-    <div class="w-32 sm:w-40 p-2 bg-amber-50 border border-amber-200/80 rounded shadow-2xl transform rotate-3 hover:scale-105 transition-all">
-        <div class="washi-tape w-16 h-4 absolute -top-2 left-1/2 -translate-x-1/2"></div>
-        <img src="721463660_1544780957302352_720720975251492386_n.jpg" alt="Memory" class="w-full h-28 sm:h-36 object-cover rounded">
-        <p class="font-pen text-lg text-center text-slate-800 pt-1">Us 💖</p>
+    <!-- Right Side Photos Column (2 Photos) -->
+    <div class="absolute right-2 sm:right-6 top-[400px] flex flex-col gap-24 z-20 hidden md:flex">
+        <div class="w-32 sm:w-40 p-2 bg-amber-50 border border-amber-200/80 rounded shadow-2xl transform rotate-6 hover:scale-105 transition-all">
+            <div class="washi-tape w-16 h-4 absolute -top-2 left-1/2 -translate-x-1/2"></div>
+            <img src="770719444_2078923502730012_1771562630956404831_n.jpg" alt="Memory" class="w-full h-28 sm:h-36 object-cover rounded">
+            <p class="font-pen text-lg text-center text-slate-800 pt-1">Cutie 🌸</p>
+        </div>
+
+        <div class="w-32 sm:w-40 p-2 bg-amber-50 border border-amber-200/80 rounded shadow-2xl transform -rotate-3 hover:scale-105 transition-all">
+            <div class="washi-tape-gold w-16 h-4 absolute -top-2 left-1/2 -translate-x-1/2"></div>
+            <img src="768637393_1069363046035647_897096609686501034_n.jpg" alt="Memory" class="w-full h-28 sm:h-36 object-cover rounded">
+            <p class="font-pen text-lg text-center text-slate-800 pt-1">Always 💫</p>
+        </div>
     </div>
 
-    <!-- Left Photo 3 -->
-    <div class="w-32 sm:w-40 p-2 bg-amber-50 border border-amber-200/80 rounded shadow-2xl transform -rotate-4 hover:scale-105 transition-all">
-        <div class="washi-tape-gold w-16 h-4 absolute -top-2 left-1/2 -translate-x-1/2"></div>
-        <img src="762660135_1745792713401246_4945141169713789483_n.jpg" alt="Memory" class="w-full h-28 sm:h-36 object-cover rounded">
-        <p class="font-pen text-lg text-center text-slate-800 pt-1">My World 🌎</p>
-    </div>
-</div>
-
-<!-- Right Side Photos Column (2 Photos) -->
-<div class="absolute right-2 sm:right-6 top-40 flex flex-col gap-20 z-10 hidden md:flex">
-    <!-- Right Photo 1 -->
-    <div class="w-32 sm:w-40 p-2 bg-amber-50 border border-amber-200/80 rounded shadow-2xl transform rotate-6 hover:scale-105 transition-all">
-        <div class="washi-tape w-16 h-4 absolute -top-2 left-1/2 -translate-x-1/2"></div>
-        <img src="770719444_2078923502730012_1771562630956404831_n.jpg" alt="Memory" class="w-full h-28 sm:h-36 object-cover rounded">
-        <p class="font-pen text-lg text-center text-slate-800 pt-1">Cutie 🌸</p>
-    </div>
-
-    <!-- Right Photo 2 -->
-    <div class="w-32 sm:w-40 p-2 bg-amber-50 border border-amber-200/80 rounded shadow-2xl transform -rotate-3 hover:scale-105 transition-all">
-        <div class="washi-tape-gold w-16 h-4 absolute -top-2 left-1/2 -translate-x-1/2"></div>
-        <img src="768637393_1069363046035647_897096609686501034_n.jpg" alt="Memory" class="w-full h-28 sm:h-36 object-cover rounded">
-        <p class="font-pen text-lg text-center text-slate-800 pt-1">Always 💫</p>
-    </div>
-</div>
-    <!-- ====================================================
-         🔒 2. LOCK SCREEN OVERLAY
-         ==================================================== -->
+    <!-- 🔒 2. LOCK SCREEN OVERLAY -->
     <div id="lock-screen" class="fixed inset-0 z-50 bg-stone-950 flex items-center justify-center p-4">
         <div class="pattern-bg rounded-2xl p-8 max-w-md w-full border-2 border-amber-400 text-center space-y-6 shadow-2xl relative overflow-hidden">
             
@@ -151,8 +143,6 @@
 
             <div class="space-y-4">
                 <input type="date" id="anniversary-date" class="w-full px-4 py-3 rounded-lg bg-stone-900 border border-amber-400/50 text-amber-100 font-mono text-center focus:outline-none focus:border-amber-300">
-                
-                <!-- Error Message if Date is Wrong -->
                 <p id="lock-error" class="text-rose-400 text-sm font-semibold hidden">Incorrect date! Try again 💕</p>
 
                 <button onclick="unlockScrapbook()" class="w-full py-3 rounded-lg bg-amber-400 hover:bg-amber-300 text-amber-950 font-title text-xl transition-all shadow-lg active:scale-95">
@@ -162,59 +152,40 @@
         </div>
     </div>
 
-
-    <!-- ====================================================
-         📖 3. MAIN DIGITAL SCRAPBOOK CONTENT
-         ==================================================== -->
-    <main class="max-w-4xl mx-auto scrapbook-canvas rounded-xl p-4 sm:p-10 relative overflow-hidden my-2">
+    <!-- 📖 3. MAIN DIGITAL SCRAPBOOK CONTENT -->
+    <main class="max-w-4xl mx-auto scrapbook-canvas rounded-xl p-4 sm:p-10 relative overflow-hidden my-2 z-10">
 
         <!-- DECORATIONS -->
         <div class="absolute -top-4 -left-4 z-20 pointer-events-none w-28 sm:w-40 flower-sticker">
-            <img src="769363177_946435978468914_1916493678486530278_n.jpg" 
-                 alt="Flowers" class="rounded-full object-cover w-24 h-24 sm:w-32 sm:h-32 border-4 border-amber-100/80 transform -rotate-12 shadow-xl">
+            <img src="769363177_946435978468914_1916493678486530278_n.jpg" alt="Flowers" class="rounded-full object-cover w-24 h-24 sm:w-32 sm:h-32 border-4 border-amber-100/80 transform -rotate-12 shadow-xl">
         </div>
 
         <div class="absolute top-4 right-4 sm:right-8 z-30 transform rotate-12">
-            <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExem4zN2U5MHN0ZXZ5bnFpb2Z2NTY1NzUxNG9keXB2cjUycnM5bjZsNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/10a8AOSeP6Rqfu/giphy.gif" 
-                 alt="HK" class="w-14 sm:w-20 flower-sticker">
+            <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExem4zN2U5MHN0ZXZ5bnFpb2Z2NTY1NzUxNG9keXB2cjUycnM5bjZsNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/10a8AOSeP6Rqfu/giphy.gif" alt="HK" class="w-14 sm:w-20 flower-sticker">
         </div>
 
         <!-- 🌸 HEADER SECTION -->
-        <!-- 🌸 HEADER SECTION -->
-<header class="text-center pt-8 pb-6 relative z-10">
-    <div class="washi-tape-gold w-32 h-6 absolute -top-1 left-1/2 -translate-x-1/2 transform -rotate-2"></div>
-
-    <span class="font-pen text-2xl sm:text-3xl text-amber-200 font-bold tracking-wide drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
-        ✨✨✨✨✨✨✨✨✨✨✨✨✨✨
-    </span>
-
-    <h1 class="font-title text-5xl sm:text-7xl leading-tight pt-2 text-amber-300 drop-shadow-[0_4px_8px_rgba(0,0,0,0.9)] tracking-wider">
-        HAPPY BIRTHDAY!
-    </h1>
-
-    <div class="font-pen text-6xl sm:text-8xl text-rose-200 transform -rotate-3 -mt-2 drop-shadow-[0_4px_8px_rgba(0,0,0,0.9)]">
-        Noorien 🌸
-    </div>
-</header>
+        <header class="text-center pt-8 pb-6 relative z-10">
+            <div class="washi-tape-gold w-32 h-6 absolute -top-1 left-1/2 -translate-x-1/2 transform -rotate-2"></div>
+            <span class="font-pen text-2xl sm:text-3xl text-amber-200 font-bold tracking-wide drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">✨✨✨✨✨✨✨✨✨✨✨✨✨✨</span>
+            <h1 class="font-title text-5xl sm:text-7xl leading-tight pt-2 text-amber-300 drop-shadow-[0_4px_8px_rgba(0,0,0,0.9)] tracking-wider">HAPPY BIRTHDAY!</h1>
+            <div class="font-pen text-6xl sm:text-8xl text-rose-200 transform -rotate-3 -mt-2 drop-shadow-[0_4px_8px_rgba(0,0,0,0.9)]">Noorien 🌸</div>
+        </header>
 
         <!-- 🎵 MUSIC PLAYER SECTION -->
         <section class="my-8 relative z-20">
             <div class="pattern-bg rounded-2xl p-5 text-amber-100 flex flex-col sm:flex-row items-center justify-between gap-5 border-2 border-amber-400/50 shadow-2xl relative">
-                
                 <div class="flex items-center gap-4">
                     <div id="disc" class="w-16 h-16 rounded-full bg-slate-900 border-2 border-amber-400 flex items-center justify-center flex-shrink-0 shadow-lg">
                         <i data-lucide="disc" class="w-8 h-8 text-rose-400"></i>
                     </div>
                     <div>
                         <span class="text-[10px] font-mono tracking-widest text-amber-300 uppercase">🎧</span>
-                        
-                        <!-- 👈 CHANGE SONG TITLE & LYRICS/CAPTION HERE -->
                         <h3 class="font-title text-2xl text-white">Jeene Laga Hoon</h3>
                         <p class="font-pen text-2xl text-rose-200">“Pehle se zyada tumpe marne laga hoon...”</p>
                     </div>
                 </div>
 
-                <!-- 👈 AUDIO TAG: AUDIO SOURCE IS CONFIGURED IN JS BELOW -->
                 <audio id="audio-track" loop></audio>
 
                 <button onclick="toggleAudio()" id="play-btn" class="px-6 py-2.5 rounded-full bg-amber-400 hover:bg-amber-300 text-amber-950 font-bold font-pen text-2xl transition-all shadow-lg flex items-center gap-2">
@@ -232,20 +203,17 @@
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-2">
-                <!-- Photo 1 -->
                 <div class="torn-card torn-edge-top p-3 transform -rotate-3 relative">
                     <div class="washi-tape w-24 h-5 absolute -top-3 left-1/2 -translate-x-1/2"></div>
                     <img id="img-slot-1" src="" alt="Memory 1" class="w-full h-48 object-cover rounded-xs">
                     <p class="font-pen text-2xl text-center text-slate-800 pt-2"></p>
                 </div>
 
-                <!-- Photo 2 -->
                 <div class="film-strip rounded-sm transform rotate-2 sm:translate-y-3 relative">
                     <img id="img-slot-2" src="" alt="Memory 2" class="w-full h-44 object-cover">
                     <p class="font-pen text-2xl text-center text-amber-200 pt-2"></p>
                 </div>
 
-                <!-- Photo 3 -->
                 <div class="pattern-bg p-3 rounded-xl transform -rotate-2 relative">
                     <div class="washi-tape-gold w-20 h-5 absolute -top-2 right-2"></div>
                     <img id="img-slot-3" src="" alt="Memory 3" class="w-full h-44 object-cover rounded border-2 border-white">
@@ -258,165 +226,123 @@
         <section class="my-8 relative z-10">
             <div class="bg-amber-100/90 border-2 border-amber-900/30 p-6 rounded-lg shadow-md transform rotate-1 relative text-slate-900">
                 <span class="text-xs font-mono uppercase text-rose-800 tracking-widest block mb-1">✍️✍️✍️</span>
-                <p class="font-hindi text-3xl sm:text-4xl text-amber-950 leading-relaxed">
-                    "تم ہمیشہ میرے چاند کا نور رہو گے۔
-"
-                </p>
-                <p class="font-pen text-2xl text-rose-900 pt-2 text-right">
-                    — For you ✨
+                <p class="font-hindi text-3xl sm:text-4xl text-amber-950 leading-relaxed">"تم ہمیشہ میرے چاند کا نور رہو گے۔"</p>
+                <p class="font-pen text-2xl text-rose-900 pt-2 text-right">— For you ✨</p>
+            </div>
+        </section>
+
+        <!-- 💌 PERSONAL LETTER -->
+        <section class="my-10 relative z-10">
+            <div class="bg-white p-6 sm:p-8 rounded-sm shadow-xl border-l-4 border-rose-500 relative text-slate-900">
+                <p class="font-pen text-3xl text-slate-800 leading-snug">
+                    HII BYY HAPPYY BIRTHDAY 😸😻 IK I'm not the best bf nd all I'm trying my bestt i love you sooo much you changed my lifee so much i Still can't believe how you came into my life 😿 during ts time we didn't even know each other now I can't even do anything without you 😞 I love you soo much I still can't believe we mettt i miss you and surrr soooooooo much us walking to city centre laughing randomly randomly you winking nd all 😭😭 you make me laugh so much sitting in beach thinking how we met nd all both balling outtt literally i was the happiest person in the world you make me feel complete i can't do single shi without you crossing my mind ik I'm not the best bf nd all but FOR YOU i'lll do anything my bby 😞 how i will live without you STILL CAN'T BELIEVE its been a year already my heart felt so heavy when you were going india and i still remember how sad you were when you were going college nd alll NOW SEE you got friends nd all hehehehe i told you ryt everything is going to be alr. The olly thing that matters for me and for us if we have each other THEN i no give af about other ppl if i head my bby voice everything good for mee heheheeeees after long as tiring dayy if i can tlk to You MY DAY FULL BECOMEE BETTER EHEHHEEHEHEHEH 😸😸 AREYYY full my heart to areee how I'll do anything without you can't imagine a world without you CAN'T IMAGINE A LIFE WITHOUT YOU OLLY 😿 i miss you soo much baby ik the distance is hard but as long as we have each other doesn't matter if it's end of the world I'll love you more and moreeee I'll love you frm the end of the worldd babyyg mwahmwahhh happy birthday to my prettiest baby i hope we can stay strong together I'll treat you better i promise I'm not best bf I'll do my everything for you i hope i do things ryt i. Love you soo muchjj. 😿😸😸
                 </p>
             </div>
         </section>
 
-       <!-- 💌 PERSONAL LETTER WITH SIDE STICKER PHOTOS -->
-<section class="my-10 relative z-10">
-    <div class="bg-white p-6 sm:p-8 rounded-sm shadow-xl border-l-4 border-rose-500 relative text-slate-900">
-        
-
-        <!-- 📜 Main Letter Paragraph -->
-        <p class="font-pen text-3xl text-slate-800 leading-snug">
-            HII BYY HAPPYY BIRTHDAY 😸😻 IK I'm not the best bf nd all I'm trying my bestt i love you sooo much you changed my lifee so much i Still can't believe how you came into my life 😿 during ts time we didn't even know each other now I can't even do anything without you 😞 I love you soo much I still can't believe we mettt i miss you and surrr soooooooo much us walking to city centre laughing randomly randomly you winking nd all 😭😭 you make me laugh so much sitting in beach thinking how we met nd all both balling outtt literally i was the happiest person in the world you make me feel complete i can't do single shi without you crossing my mind ik I'm not the best bf nd all but FOR YOU i'lll do anything my bby 😞 how i will live without you STILL CAN'T BELIEVE its been a year already my heart felt so heavy when you were going india and i still remember how sad you were when you were going college nd alll NOW SEE you got friends nd all hehehehe i told you ryt everything is going to be alr. The olly thing that matters for me and for us if we have each other THEN i no give af about other ppl if i head my bby voice everything good for mee heheheeeees after long as tiring dayy if i can tlk to You MY DAY FULL BECOMEE BETTER EHEHHEEHEHEHEH 😸😸 AREYYY full my heart to areee how I'll do anything without you can't imagine a world without you CAN'T IMAGINE A LIFE WITHOUT YOU OLLY 😿 i miss you soo much baby ik the distance is hard but as long as we have each other doesn't matter if it's end of the world I'll love you more and moreeee I'll love you frm the end of the worldd babyyg mwahmwahhh happy birthday to my prettiest baby i hope we can stay strong together I'll treat you better i promise I'm not best bf I'll do my everything for you i hope i do things ryt i. Love you soo muchjj. 😿😸😸
-        </p>
-
-    </div>
-</section>
-
-    
-
     </main>
 
-    <!-- ====================================================
-         🎁 4. SURPRISE MODAL CONTAINER
-         ==================================================== -->
-   
-
-    <!-- ====================================================
-         ⚙️ 5. CONFIGURATION & JAVASCRIPT LOGIC
-         ==================================================== -->
+    <!-- ⚙️ CONFIGURATION & JAVASCRIPT LOGIC -->
     <script>
-        // ----------------------------------------------------
-        // 🔑 CONFIG 1: SET YOUR SECRET ANNIVERSARY DATE HERE
-        // Format MUST be "YYYY-MM-DD"
-        // ----------------------------------------------------
-        const CORRECT_DATE = "2010-08-12"; // 👈 CHANGE THIS to your actual date (e.g. "2023-11-20")
+        const CORRECT_DATE = "2010-08-12";
+        const AUDIO_FILE_PATH = "jlh.mp3";
 
-        // ----------------------------------------------------
-        // 🎵 CONFIG 2: SET YOUR AUDIO FILE HERE
-        // Local path e.g. "song.mp3" OR a direct web link ending in .mp3
-        // ----------------------------------------------------
-        const AUDIO_FILE_PATH = "jlh.mp3"; // 👈 REPLACE WITH YOUR MP3 PATH
-
-        // ----------------------------------------------------
-        // 🖼️ CONFIG 3: SET YOUR SCRAPBOOK IMAGE PATHS HERE
-        // Local paths e.g. "images/photo1.jpg" OR direct URLs
-        // ----------------------------------------------------
         const MY_SCRAPBOOK_IMAGES = {
-            photo1: "764952482_1755660922237144_668846060104300067_n.jpg", // 👈 PHOTO 1
-            photo2: "766193469_1393509959370337_6263390845118419643_n.jpg", // 👈 PHOTO 2
-            photo3: "766051809_2271630503614065_7179615107585724642_n.jpg"  // 👈 PHOTO 3
+            photo1: "764952482_1755660922237144_668846060104300067_n.jpg",
+            photo2: "766193469_1393509959370337_6263390845118419643_n.jpg",
+            photo3: "766051809_2271630503614065_7179615107585724642_n.jpg"
         };
 
-
-        // ====================================================
-        // 🚀 CODE EXECUTION LOGIC (NO NEED TO EDIT BELOW)
-        // ====================================================
-
-        // Load images and audio source dynamically from config
         document.getElementById('audio-track').src = AUDIO_FILE_PATH;
         document.getElementById('img-slot-1').src = MY_SCRAPBOOK_IMAGES.photo1;
         document.getElementById('img-slot-2').src = MY_SCRAPBOOK_IMAGES.photo2;
         document.getElementById('img-slot-3').src = MY_SCRAPBOOK_IMAGES.photo3;
 
-        // Initialize Lucide icons
         lucide.createIcons();
         
-        // ✨ STAR / SPARKLE EFFECT FUNCTION
-function triggerStarEffect() {
-    const canvas = document.createElement('canvas');
-    const ctx = canvas.getContext('2d');
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-    canvas.style.position = 'fixed';
-    canvas.style.top = '0';
-    canvas.style.left = '0';
-    canvas.style.pointerEvents = 'none';
-    canvas.style.zIndex = '9999';
-    document.body.appendChild(canvas);
+        function triggerStarEffect() {
+            const canvas = document.createElement('canvas');
+            const ctx = canvas.getContext('2d');
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            canvas.style.position = 'fixed';
+            canvas.style.top = '0';
+            canvas.style.left = '0';
+            canvas.style.pointerEvents = 'none';
+            canvas.style.zIndex = '9999';
+            document.body.appendChild(canvas);
 
-    const stars = Array.from({ length: 60 }, () => ({
-        x: window.innerWidth / 2,
-        y: window.innerHeight / 2,
-        vx: (Math.random() - 0.5) * 12,
-        vy: (Math.random() - 0.5) * 12,
-        size: Math.random() * 8 + 4,
-        color: ['#fde047', '#f472b6', '#ffffff', '#fbbf24'][Math.floor(Math.random() * 4)],
-        alpha: 1,
-        decay: Math.random() * 0.02 + 0.015
-    }));
+            const stars = Array.from({ length: 60 }, () => ({
+                x: window.innerWidth / 2,
+                y: window.innerHeight / 2,
+                vx: (Math.random() - 0.5) * 12,
+                vy: (Math.random() - 0.5) * 12,
+                size: Math.random() * 8 + 4,
+                color: ['#fde047', '#f472b6', '#ffffff', '#fbbf24'][Math.floor(Math.random() * 4)],
+                alpha: 1,
+                decay: Math.random() * 0.02 + 0.015
+            }));
 
-    function drawStar(cx, cy, spikes, outerRadius, innerRadius, color, alpha) {
-        let rot = Math.PI / 2 * 3;
-        let x = cx;
-        let y = cy;
-        const step = Math.PI / spikes;
+            function drawStar(cx, cy, spikes, outerRadius, innerRadius, color, alpha) {
+                let rot = Math.PI / 2 * 3;
+                let x = cx;
+                let y = cy;
+                const step = Math.PI / spikes;
 
-        ctx.save();
-        ctx.beginPath();
-        ctx.moveTo(cx, cy - outerRadius);
-        for (let i = 0; i < spikes; i++) {
-            x = cx + Math.cos(rot) * outerRadius;
-            y = cy + Math.sin(rot) * outerRadius;
-            ctx.lineTo(x, y);
-            rot += step;
+                ctx.save();
+                ctx.beginPath();
+                ctx.moveTo(cx, cy - outerRadius);
+                for (let i = 0; i < spikes; i++) {
+                    x = cx + Math.cos(rot) * outerRadius;
+                    y = cy + Math.sin(rot) * outerRadius;
+                    ctx.lineTo(x, y);
+                    rot += step;
 
-            x = cx + Math.cos(rot) * innerRadius;
-            y = cy + Math.sin(rot) * innerRadius;
-            ctx.lineTo(x, y);
-            rot += step;
-        }
-        ctx.lineTo(cx, cy - outerRadius);
-        ctx.closePath();
-        ctx.fillStyle = color;
-        ctx.globalAlpha = alpha;
-        ctx.fill();
-        ctx.restore();
-    }
-
-    function animate() {
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-        let activeStars = 0;
-
-        stars.forEach(star => {
-            if (star.alpha > 0) {
-                star.x += star.vx;
-                star.y += star.vy;
-                star.alpha -= star.decay;
-                drawStar(star.x, star.y, 4, star.size, star.size / 2, star.color, Math.max(0, star.alpha));
-                activeStars++;
+                    x = cx + Math.cos(rot) * innerRadius;
+                    y = cy + Math.sin(rot) * innerRadius;
+                    ctx.lineTo(x, y);
+                    rot += step;
+                }
+                ctx.lineTo(cx, cy - outerRadius);
+                ctx.closePath();
+                ctx.fillStyle = color;
+                ctx.globalAlpha = alpha;
+                ctx.fill();
+                ctx.restore();
             }
-        });
 
-        if (activeStars > 0) {
-            requestAnimationFrame(animate);
-        } else {
-            canvas.remove();
+            function animate() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                let activeStars = 0;
+
+                stars.forEach(star => {
+                    if (star.alpha > 0) {
+                        star.x += star.vx;
+                        star.y += star.vy;
+                        star.alpha -= star.decay;
+                        drawStar(star.x, star.y, 4, star.size, star.size / 2, star.color, Math.max(0, star.alpha));
+                        activeStars++;
+                    }
+                });
+
+                if (activeStars > 0) {
+                    requestAnimationFrame(animate);
+                } else {
+                    canvas.remove();
+                }
+            }
+            animate();
         }
-    }
-    animate();
-}
 
-        // Lock Screen Password Validation
         function unlockScrapbook() {
             const inputDate = document.getElementById('anniversary-date').value;
             const errorMsg = document.getElementById('lock-error');
 
             if (inputDate === CORRECT_DATE) {
                 triggerStarEffect();
-                // Correct date entered: hide lock screen & start playback
                 document.getElementById('lock-screen').style.display = 'none';
                 errorMsg.classList.add('hidden');
                 
-                // Play audio automatically after unlocking
                 const audio = document.getElementById('audio-track');
                 audio.play().then(() => {
                     isPlaying = true;
@@ -428,12 +354,10 @@ function triggerStarEffect() {
 
                 popConfetti();
             } else {
-                // Incorrect date: show error message
                 errorMsg.classList.remove('hidden');
             }
         }
 
-        // Audio Player Controls
         const audio = document.getElementById('audio-track');
         const playText = document.getElementById('play-text');
         const playIcon = document.getElementById('play-icon');
@@ -456,21 +380,6 @@ function triggerStarEffect() {
             lucide.createIcons();
         }
 
-        // Surprise Modal Control
-        function openSurpriseModal() {
-            const modal = document.getElementById('surprise-modal');
-            modal.classList.remove('hidden');
-            modal.classList.add('flex');
-            popConfetti();
-        }
-
-        function closeSurpriseModal() {
-            const modal = document.getElementById('surprise-modal');
-            modal.classList.remove('flex');
-            modal.classList.add('hidden');
-        }
-
-        // Confetti Effect
         function popConfetti() {
             confetti({
                 particleCount: 120,

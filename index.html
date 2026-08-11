@@ -92,7 +92,48 @@
     </style>
 </head>
 <body class="min-h-screen py-8 px-3 sm:px-6 relative">
+<!-- 📸 SCROLLING SIDE PHOTOS (3 Left, 2 Right) -->
 
+<!-- Left Side Photos Column (3 Photos) -->
+<div class="absolute left-2 sm:left-6 top-20 flex flex-col gap-12 z-10 hidden md:flex">
+    <!-- Left Photo 1 -->
+    <div class="w-32 sm:w-40 p-2 bg-amber-50 border border-amber-200/80 rounded shadow-2xl transform -rotate-6 hover:scale-105 transition-all">
+        <div class="washi-tape-gold w-16 h-4 absolute -top-2 left-1/2 -translate-x-1/2"></div>
+        <img src="764558418_731796843362275_232900130083784362_n.jpg" alt="Memory" class="w-full h-28 sm:h-36 object-cover rounded">
+        <p class="font-pen text-lg text-center text-slate-800 pt-1">Memories ✨</p>
+    </div>
+
+    <!-- Left Photo 2 -->
+    <div class="w-32 sm:w-40 p-2 bg-amber-50 border border-amber-200/80 rounded shadow-2xl transform rotate-3 hover:scale-105 transition-all">
+        <div class="washi-tape w-16 h-4 absolute -top-2 left-1/2 -translate-x-1/2"></div>
+        <img src="721463660_1544780957302352_720720975251492386_n.jpg" alt="Memory" class="w-full h-28 sm:h-36 object-cover rounded">
+        <p class="font-pen text-lg text-center text-slate-800 pt-1">Us 💖</p>
+    </div>
+
+    <!-- Left Photo 3 -->
+    <div class="w-32 sm:w-40 p-2 bg-amber-50 border border-amber-200/80 rounded shadow-2xl transform -rotate-4 hover:scale-105 transition-all">
+        <div class="washi-tape-gold w-16 h-4 absolute -top-2 left-1/2 -translate-x-1/2"></div>
+        <img src="762660135_1745792713401246_4945141169713789483_n.jpg" alt="Memory" class="w-full h-28 sm:h-36 object-cover rounded">
+        <p class="font-pen text-lg text-center text-slate-800 pt-1">My World 🌎</p>
+    </div>
+</div>
+
+<!-- Right Side Photos Column (2 Photos) -->
+<div class="absolute right-2 sm:right-6 top-40 flex flex-col gap-20 z-10 hidden md:flex">
+    <!-- Right Photo 1 -->
+    <div class="w-32 sm:w-40 p-2 bg-amber-50 border border-amber-200/80 rounded shadow-2xl transform rotate-6 hover:scale-105 transition-all">
+        <div class="washi-tape w-16 h-4 absolute -top-2 left-1/2 -translate-x-1/2"></div>
+        <img src="770719444_2078923502730012_1771562630956404831_n.jpg" alt="Memory" class="w-full h-28 sm:h-36 object-cover rounded">
+        <p class="font-pen text-lg text-center text-slate-800 pt-1">Cutie 🌸</p>
+    </div>
+
+    <!-- Right Photo 2 -->
+    <div class="w-32 sm:w-40 p-2 bg-amber-50 border border-amber-200/80 rounded shadow-2xl transform -rotate-3 hover:scale-105 transition-all">
+        <div class="washi-tape-gold w-16 h-4 absolute -top-2 left-1/2 -translate-x-1/2"></div>
+        <img src="768637393_1069363046035647_897096609686501034_n.jpg" alt="Memory" class="w-full h-28 sm:h-36 object-cover rounded">
+        <p class="font-pen text-lg text-center text-slate-800 pt-1">Always 💫</p>
+    </div>
+</div>
     <!-- ====================================================
          🔒 2. LOCK SCREEN OVERLAY
          ==================================================== -->
@@ -231,19 +272,6 @@
 <section class="my-10 relative z-10">
     <div class="bg-white p-6 sm:p-8 rounded-sm shadow-xl border-l-4 border-rose-500 relative text-slate-900">
         
-        <!-- 📸 Left Floating Photo -->
-        <div class="hidden sm:block absolute -left-12 top-6 w-32 p-2 bg-amber-50 border border-amber-200 rounded shadow-2xl transform -rotate-6 z-20 hover:scale-105 transition-transform">
-            <div class="washi-tape-gold w-16 h-4 absolute -top-2 left-1/2 -translate-x-1/2"></div>
-            <img src="770719444_2078923502730012_1771562630956404831_n.jpg" alt="Memory Left" class="w-full h-28 object-cover rounded">
-            <p class="font-pen text-lg text-center text-slate-700 pt-1">Us 💖</p>
-        </div>
-
-        <!-- 📸 Right Floating Photo -->
-        <div class="hidden sm:block absolute -right-12 bottom-8 w-32 p-2 bg-amber-50 border border-amber-200 rounded shadow-2xl transform rotate-6 z-20 hover:scale-105 transition-transform">
-            <div class="washi-tape w-16 h-4 absolute -top-2 left-1/2 -translate-x-1/2"></div>
-            <img src="770719444_2078923502730012_1771562630956404831_n.jpg" alt="Memory Right" class="w-full h-28 object-cover rounded">
-            <p class="font-pen text-lg text-center text-slate-700 pt-1">Cutie 🌸</p>
-        </div>
 
         <!-- 📜 Main Letter Paragraph -->
         <p class="font-pen text-3xl text-slate-800 leading-snug">

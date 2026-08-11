@@ -192,7 +192,7 @@
         <!-- 💌 PERSONAL LETTER (Anchor for side photos) -->
         <section class="my-10 relative z-20">
 
-            <!-- Left Side Photos (Anchored strictly to top-0 of this white box) -->
+            <!-- Left Side Photos -->
             <div class="hidden xl:flex flex-col gap-8 absolute -left-48 top-0 w-40 z-30">
                 <div class="p-2 bg-amber-50 border border-amber-200/80 rounded shadow-2xl transform -rotate-6 hover:scale-105 transition-all relative">
                     <div class="washi-tape-gold w-16 h-4 absolute -top-2 left-1/2 -translate-x-1/2"></div>
@@ -213,7 +213,7 @@
                 </div>
             </div>
 
-            <!-- Right Side Photos (Anchored strictly to top-0 of this white box) -->
+            <!-- Right Side Photos -->
             <div class="hidden xl:flex flex-col gap-12 absolute -right-48 top-0 w-40 z-30">
                 <div class="p-2 bg-amber-50 border border-amber-200/80 rounded shadow-2xl transform rotate-6 hover:scale-105 transition-all relative">
                     <div class="washi-tape w-16 h-4 absolute -top-2 left-1/2 -translate-x-1/2"></div>
@@ -236,6 +236,30 @@
             </div>
         </section>
 
+        <!-- 🎵 SONG COVER & END NOTE SECTION -->
+        <section class="my-12 relative z-20">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                
+                <!-- Song Cover Image Box -->
+                <div class="pattern-bg p-4 rounded-2xl shadow-2xl border-2 border-amber-400/60 transform -rotate-2 relative">
+                    <div class="washi-tape-gold w-28 h-6 absolute -top-3 left-1/2 -translate-x-1/2"></div>
+                    <img id="song-cover-img" src="Son_of_Spergy.png
+" alt="Song Cover" class="w-full h-64 sm:h-80 object-cover rounded-xl border border-amber-200/40 shadow-inner">
+                    <p class="font-pen text-2xl text-amber-200 text-center pt-3 drop-shadow">🎶</p>
+                </div>
+
+                <!-- Handwritten Note Box -->
+                <div class="bg-amber-50 p-6 sm:p-8 rounded-xl shadow-xl border-2 border-amber-300/80 transform rotate-2 relative text-slate-900">
+                    <div class="washi-tape w-24 h-5 absolute -top-3 right-4"></div>
+                    <h3 class="font-title text-2xl text-amber-900 mb-2">A Little Note For You 💌</h3>
+                    <p id="song-note-text" class="font-pen text-3xl text-slate-800 leading-relaxed">
+                        "Still can't forget when you made me listen to Daniel Ceaser, Comfort Song 😿❤️"
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
     </main>
 
     <!-- ⚙️ CONFIGURATION & JAVASCRIPT LOGIC -->
@@ -246,13 +270,15 @@
         const MY_SCRAPBOOK_IMAGES = {
             photo1: "764952482_1755660922237144_668846060104300067_n.jpg",
             photo2: "766193469_1393509959370337_6263390845118419643_n.jpg",
-            photo3: "766051809_2271630503614065_7179615107585724642_n.jpg"
+            photo3: "766051809_2271630503614065_7179615107585724642_n.jpg",
+            songCover: "song-cover.jpg" // Replace with your song cover image file name
         };
 
         document.getElementById('audio-track').src = AUDIO_FILE_PATH;
         document.getElementById('img-slot-1').src = MY_SCRAPBOOK_IMAGES.photo1;
         document.getElementById('img-slot-2').src = MY_SCRAPBOOK_IMAGES.photo2;
         document.getElementById('img-slot-3').src = MY_SCRAPBOOK_IMAGES.photo3;
+        document.getElementById('song-cover-img').src = MY_SCRAPBOOK_IMAGES.songCover;
 
         lucide.createIcons();
         
